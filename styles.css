@@ -1,0 +1,103 @@
+body {
+	background-color: white;
+}
+html,pre {
+	font-family: "Lucida Sans", sans-serif;
+}
+
+a:link {
+	color: black;
+	background-color: transparent;
+	text-decoration:  none;
+}
+a:visited {
+	color:  black;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	background-color: transparent;
+	text-decoration: underline;
+}
+a:active {
+	color: black;
+	background-color: transparent;
+	text-decoration: underline;
+}
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+th {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 5;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.header {
+	background-color: #999999;
+	color: black;
+	padding: 15px;
+	text-align: left;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border-style: none;
+	border-radius: 1px;
+}
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li {
+ 	padding: 8px;
+ 	margin-bottom: 7px;
+ 	background-color : #bfbfbf;
+ 	cursor: pointer;
+
+ 	border-style: none;
+ 	border-radius: 1px;
+
+ 	color: black;
+  	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+  	background-color: #d9d9d9;
+}
+.menu li:active {
+	background-color: #a6a6a6;
+	transition: background-color 0.2s;
+}
